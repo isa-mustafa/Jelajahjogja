@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Kirim pertanyaan dan rencana perjalanan melalui formulir Jelajah Jogja.">
+  <title>Jelajah Jogja — Kontak</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">Jelajah<span>Jogja</span></a>
+    <nav aria-label="Navigasi utama">
+      <a href="index.html">Beranda</a>
+      <a href="peta.html">Peta Wisata</a>
+      <a href="destinasi.html">Destinasi</a>
+      <a class="active" aria-current="page" href="kontak.html">Kontak</a>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <section class="page-heading">
+      <p class="eyebrow">Kami ingin mendengar ceritamu</p>
+      <h1>Ada yang ingin ditanyakan?</h1>
+      <p>Isi formulir berikut untuk simulasi pengiriman pertanyaan atau rencana perjalanan.</p>
+    </section>
+
+    <section class="contact-layout">
+      <form class="contact-form" action="#" method="get">
+        <div class="form-row">
+          <label for="nama">Nama lengkap</label>
+          <input id="nama" name="nama" type="text" autocomplete="name" placeholder="Contoh: Siti Rahma" required>
+        </div>
+        <div class="form-row">
+          <label for="email">Alamat email</label>
+          <input id="email" name="email" type="email" autocomplete="email" placeholder="nama@email.com" required>
+        </div>
+        <div class="form-row">
+          <label for="destinasi">Destinasi yang diminati</label>
+          <select id="destinasi" name="destinasi" required>
+            <option value="">Pilih destinasi</option>
+            <option value="parangtritis">Pantai Parangtritis</option>
+            <option value="keraton">Keraton Yogyakarta</option>
+            <option value="prambanan">Candi Prambanan</option>
+          </select>
+        </div>
+        <fieldset class="form-row">
+          <legend>Jenis pertanyaan</legend>
+          <label class="choice"><input type="radio" name="jenis" value="kunjungan" required> Rencana kunjungan</label>
+          <label class="choice"><input type="radio" name="jenis" value="informasi"> Informasi destinasi</label>
+        </fieldset>
+        <div class="form-row">
+          <label for="pesan">Pesan</label>
+          <textarea id="pesan" name="pesan" rows="5" placeholder="Tuliskan pertanyaan atau rencana perjalananmu..." required></textarea>
+        </div>
+        <button class="button" type="submit">Kirim pertanyaan <span aria-hidden="true">→</span></button>
+        <p class="form-note">Catatan: formulir ini hanya simulasi HTML. Data tidak disimpan atau dikirim ke server.</p>
+      </form>
+
+      <aside class="contact-aside">
+        <p class="eyebrow">Sebelum berangkat</p>
+        <h2>Rencanakan dengan nyaman</h2>
+        <p>Periksa kembali informasi resmi mengenai jam buka, tiket, cuaca, dan akses menuju destinasi pilihanmu.</p>
+        <a class="text-link" href="https://visitingjogja.jogjaprov.go.id/" target="_blank" rel="noopener noreferrer">Kunjungi situs pariwisata Jogja <span aria-hidden="true">↗</span></a>
+        <div class="aside-divider"></div>
+        <h3>Halaman lainnya</h3>
+        <ul class="page-links">
+          <li><a href="peta.html">Pilih destinasi di peta</a></li>
+          <li><a href="destinasi.html">Baca ringkasan destinasi</a></li>
+          <li><a href="index.html">Kembali ke beranda</a></li>
+        </ul>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand" href="index.html">Jelajah<span>Jogja</span></a>
+    <p>Proyek Website Interaktif dengan Image Map · UTS Web Statis</p>
+  </footer>
+</body>
+</html>

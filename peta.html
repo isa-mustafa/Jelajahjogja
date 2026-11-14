@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Peta interaktif untuk memilih destinasi wisata di Yogyakarta.">
+  <title>Jelajah Jogja — Peta Wisata</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">Jelajah<span>Jogja</span></a>
+    <nav aria-label="Navigasi utama">
+      <a href="index.html">Beranda</a>
+      <a class="active" aria-current="page" href="peta.html">Peta Wisata</a>
+      <a href="destinasi.html">Destinasi</a>
+      <a href="kontak.html">Kontak</a>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <section class="page-heading">
+      <p class="eyebrow">Pilih titik untuk menjelajah</p>
+      <h1>Peta wisata interaktif</h1>
+      <p>Klik salah satu penanda pada peta untuk langsung membaca informasi tempatnya.</p>
+    </section>
+
+    <section class="map-panel" aria-label="Peta wisata Yogyakarta">
+      <div class="map-scroll">
+        <img class="map-image" src="images/peta-wisata.svg" width="900" height="520" usemap="#peta-jogja" alt="Ilustrasi peta Yogyakarta dengan penanda Pantai Parangtritis, Keraton Yogyakarta, dan Candi Prambanan">
+        <map name="peta-jogja">
+          <area shape="circle" coords="166,360,48" href="destinasi.html#parangtritis" alt="Pantai Parangtritis" title="Buka informasi Pantai Parangtritis">
+          <area shape="circle" coords="452,245,48" href="destinasi.html#keraton" alt="Keraton Yogyakarta" title="Buka informasi Keraton Yogyakarta">
+          <area shape="circle" coords="718,142,48" href="destinasi.html#prambanan" alt="Candi Prambanan" title="Buka informasi Candi Prambanan">
+        </map>
+      </div>
+      <p class="map-hint"><span aria-hidden="true">●</span> Setiap lingkaran berwarna pada peta adalah area yang dapat diklik. Pada layar kecil, geser peta ke samping.</p>
+      <div class="map-legend">
+        <a href="destinasi.html#parangtritis"><span class="legend-dot coral"></span>Pantai Parangtritis</a>
+        <a href="destinasi.html#keraton"><span class="legend-dot gold"></span>Keraton Yogyakarta</a>
+        <a href="destinasi.html#prambanan"><span class="legend-dot green"></span>Candi Prambanan</a>
+      </div>
+    </section>
+
+    <section class="section map-note">
+      <h2>Petunjuk singkat</h2>
+      <ol>
+        <li>Pilih salah satu penanda pada gambar peta.</li>
+        <li>Kamu akan diarahkan ke bagian destinasi yang sesuai.</li>
+        <li>Baca ringkasan dan gunakan tautan resmi untuk mencari informasi kunjungan terbaru.</li>
+      </ol>
+      <a class="text-link" href="destinasi.html">Lihat semua informasi destinasi <span aria-hidden="true">→</span></a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand" href="index.html">Jelajah<span>Jogja</span></a>
+    <p>Proyek Website Interaktif dengan Image Map · UTS Web Statis</p>
+  </footer>
+</body>
+</html>
