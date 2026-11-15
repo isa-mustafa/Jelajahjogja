@@ -13,7 +13,6 @@
     <nav aria-label="Navigasi utama">
       <a href="index.html">Beranda</a>
       <a class="active" aria-current="page" href="peta.html">Peta Wisata</a>
-      <a href="destinasi.html">Destinasi</a>
       <a href="kontak.html">Kontak</a>
     </nav>
   </header>
@@ -29,17 +28,61 @@
       <div class="map-scroll">
         <img class="map-image" src="images/map.jpeg" width="900" height="520" usemap="#peta-jogja" alt="Peta wisata Yogyakarta dengan penanda Pantai Parangtritis, Keraton Yogyakarta, dan Candi Prambanan">
         <map name="peta-jogja">
-          <area shape="circle" coords="166,360,48" href="destinasi.html#parangtritis" alt="Pantai Parangtritis" title="Buka informasi Pantai Parangtritis">
-          <area shape="circle" coords="452,245,48" href="destinasi.html#keraton" alt="Keraton Yogyakarta" title="Buka informasi Keraton Yogyakarta">
-          <area shape="circle" coords="718,142,48" href="destinasi.html#prambanan" alt="Candi Prambanan" title="Buka informasi Candi Prambanan">
+          <area shape="circle" coords="166,360,48" href="#parangtritis" alt="Pantai Parangtritis" title="Lihat informasi Pantai Parangtritis">
+          <area shape="circle" coords="452,245,48" href="#keraton" alt="Keraton Yogyakarta" title="Lihat informasi Keraton Yogyakarta">
+          <area shape="circle" coords="718,142,48" href="#prambanan" alt="Candi Prambanan" title="Lihat informasi Candi Prambanan">
         </map>
       </div>
       <p class="map-hint"><span aria-hidden="true">●</span> Setiap lingkaran berwarna pada peta adalah area yang dapat diklik. Pada layar kecil, geser peta ke samping.</p>
       <div class="map-legend">
-        <a href="destinasi.html#parangtritis"><span class="legend-dot coral"></span>Pantai Parangtritis</a>
-        <a href="destinasi.html#keraton"><span class="legend-dot gold"></span>Keraton Yogyakarta</a>
-        <a href="destinasi.html#prambanan"><span class="legend-dot green"></span>Candi Prambanan</a>
+        <a href="#parangtritis"><span class="legend-dot coral"></span>Pantai Parangtritis</a>
+        <a href="#keraton"><span class="legend-dot gold"></span>Keraton Yogyakarta</a>
+        <a href="#prambanan"><span class="legend-dot green"></span>Candi Prambanan</a>
       </div>
+    </section>
+
+    <section class="destination-list" aria-label="Pilihan destinasi">
+      <article class="destination-card" id="parangtritis">
+        <img src="images/suasanajogja.jpg" alt="Suasana pesisir Yogyakarta saat senja">
+        <div class="destination-copy">
+          <p class="eyebrow">01 · Pesisir selatan</p>
+          <h2>Pantai Parangtritis</h2>
+          <p>Pantai di pesisir selatan Kabupaten Bantul ini menawarkan garis pantai yang luas, debur ombak Samudra Hindia, dan langit senja yang indah. Suasana pantainya cocok untuk berjalan santai sambil menikmati pemandangan laut.</p>
+          <ul>
+            <li>Waktu yang disarankan: sore hari</li>
+            <li>Aktivitas: menikmati pemandangan dan berjalan di tepi pantai</li>
+          </ul>
+          <a class="text-link" href="parangtritis.html">Informasi pariwisata Yogyakarta <span aria-hidden="true">↗</span></a>
+        </div>
+      </article>
+
+      <article class="destination-card" id="keraton">
+        <img src="images/map.jpeg" alt="Peta wisata Yogyakarta dengan titik destinasi utama">
+        <div class="destination-copy">
+          <p class="eyebrow">02 · Pusat budaya</p>
+          <h2>Keraton Yogyakarta</h2>
+          <p>Keraton Yogyakarta adalah istana Kesultanan Yogyakarta sekaligus pusat kebudayaan Jawa yang masih hidup. Di dalam kompleksnya, pengunjung dapat melihat arsitektur tradisional, benda bersejarah, dan mengenal tradisi keraton.</p>
+          <ul>
+            <li>Waktu yang disarankan: pagi hingga siang</li>
+            <li>Aktivitas: mengamati bangunan dan koleksi budaya</li>
+          </ul>
+          <a class="text-link" href="keraton.html">Cari informasi kunjungan resmi <span aria-hidden="true">↗</span></a>
+        </div>
+      </article>
+
+      <article class="destination-card" id="prambanan">
+        <img src="images/candi.jpg" alt="Candi Prambanan dengan pemandangan bangunan bersejarah">
+        <div class="destination-copy">
+          <p class="eyebrow">03 · Warisan dunia</p>
+          <h2>Candi Prambanan</h2>
+          <p>Candi Prambanan merupakan kompleks candi Hindu dengan menara batu yang menjulang dan relief yang mengisahkan Ramayana. Suasana kompleks yang luas mengajak pengunjung mengenal sejarah, seni, dan arsitektur Hindu di kawasan perbatasan Yogyakarta dan Jawa Tengah.</p>
+          <ul>
+            <li>Waktu yang disarankan: pagi atau menjelang senja</li>
+            <li>Aktivitas: menjelajahi kompleks candi dan mengenal sejarahnya</li>
+          </ul>
+          <a class="text-link" href="candi-prambanan.html">Cari informasi kunjungan resmi <span aria-hidden="true">↗</span></a>
+        </div>
+      </article>
     </section>
 
     <section class="section map-note">
@@ -49,7 +92,6 @@
         <li>Kamu akan diarahkan ke bagian destinasi yang sesuai.</li>
         <li>Baca ringkasan dan gunakan tautan resmi untuk mencari informasi kunjungan terbaru.</li>
       </ol>
-      <a class="text-link" href="destinasi.html">Lihat semua informasi destinasi <span aria-hidden="true">→</span></a>
     </section>
   </main>
 
